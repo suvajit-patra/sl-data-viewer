@@ -1,0 +1,1 @@
+{"root_path": "/data/INCLUDE", "meta_file": "metadata_include.csv", "fps": 60}
