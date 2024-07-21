@@ -9,24 +9,22 @@ Welcome to the Sign Language (SL) Dataset Viewer Application! This project aims 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Features
 
-- **SL Dictionary**: Access words and their corresponding signs in Sign Language.
-- **Video Demonstrations**: View video demonstrations of each sign for better understanding and learning.
+- **Video Demonstrations**: View video demonstrations of each sign with train, test and validation split for better dataset analysis.
 - **Search Functionality**: Quickly find specific signs using the search feature which allows prefix search also.
 - **Speed and Frame Check**: See sign videos in different speed and have feature to check frame by frame.
 - **User-Friendly Interface**: Simple and intuitive interface for ease of use.
 
 ## Installation
 
-To run the SL Dictionary Application locally, follow these steps:
+To run the SL Dataset Viewer Application locally, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/suvajit-patra/sl-dictionary-app.git
-    cd sl-dictionary-app
+    git clone https://github.com/suvajit-patra/sl-dataset-viewer.git
+    cd sl-dataset-viewer
     ```
 
 2. **Install Dependencies**:
@@ -38,11 +36,14 @@ To run the SL Dictionary Application locally, follow these steps:
     ```
 
 3. **Download Data**:
-    Download the Indian sign language data from [here](https://drive.google.com/file/d/1LERX4tOWdBjIRuEV-XJOTeX2EyPDBQFG/view?usp=sharing) and put the `videos` and `words.txt` in the `data` folder.
+    Download any sign language dataset from their corresponding sources.
 
-4. **Start the Application**:
+4. **Generate Metadata**:
+    Go to [this repository](https://github.com/suvajit-patra/sl-hwgat) and run the metadata generator or make your own script to make the metadata similar to the [example metadata](metadata_include.csv) where `video_dir` is the relative path of the video from the dataset `root`. 
+
+5. **Start the Application**:
     ```
-    python dictionary_main.py
+    python data_viewer.py
     ```
 
 ## Usage
@@ -50,22 +51,15 @@ To run the SL Dictionary Application locally, follow these steps:
 Once the application is running, you can:
 
 - **Search for Signs**: Use the search box to find signs for specific words.
-- **Watch Videos**: Click on words to watch video demonstrations of the signs.
-- **Learn**: Use the application as a learning tool to improve your understanding and fluency in Sign Language.
+- **Watch Videos**: Click on words and click on any dataset video to watch video of the signs.
+- **Analyse**: Use the application as an analysis tool to ease your research work in any Sign Language dataset.
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
-
-We would like to thank the FDMSE, RKMVERI for their valuable resources and support.
-
-
 ---
 
-For any questions or support, please open an issue in this repository.
-
-Happy Learning!
+Thank you for using this repository. For any questions or support, please open an issue in this repository.
 
 ---
